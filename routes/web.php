@@ -35,8 +35,8 @@ Route::get('/blog', [LandingController::class, 'blog'])->name('blog');
 Route::get('/blogdetail/{slug}', [LandingController::class, 'blogdetail'])->name('blogdetail');
 
 Route::get('/quickview/{id}', [LandingController::class, 'quickview'])->name('quickView');
-Route::get('/aboutus', [LandingController::class, 'aboutus'])->name('aboutus');
-Route::get('/contactus', [LandingController::class, 'contactus'])->name('contactus');
+Route::get('/about', [LandingController::class, 'about'])->name('about');
+Route::get('/contact', [LandingController::class, 'contact'])->name('contact');
 
 
 Route::get('admin/login', [LoginController::class,'index'])->name('admin.login');

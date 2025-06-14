@@ -46,19 +46,19 @@ class LandingController extends Controller
     }
 
     //aboutus
-    public function aboutus() {
+    public function about() {
         // return view('frontend.page.aboutus');
 
         $contact = Contact::orderBy('id', 'desc')->first();
-        return view('frontend.page.aboutus', compact('contact'));
+        return view('frontend.page.about', compact('contact'));
     }
 
     //contactus
-    public function contactus() {
+    public function contact() {
         //get data contact
         $contact = Contact::orderBy('id', 'desc')->first();
         // dd($contact);
-        return view('frontend.page.contactus', compact('contact'));
+        return view('frontend.page.contact', compact('contact'));
     }
 
     //blogdetail

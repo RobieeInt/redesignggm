@@ -1,103 +1,187 @@
 <!doctype html>
-<html lang="en">
+<html class="no-js" lang="en">
 
 <head>
+    <title>GGM Redesign Web</title>
     <meta charset="utf-8">
-    <title>Dapur Gemilang | @yield('title')</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="ThemeZaa">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="description"
-        content="Dapur Gemilang: Ahli dalam Pembuatan Kitchen Set Kustom dengan Keahlian Alumunium dan Bahan Upvc. Ciptakan Ruangan Impian Anda dengan Produk Berkualitas yang Disesuaikan dengan Keinginan dan Gaya Anda.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Dapur Gemilang">
-    <meta name="keywords"
-        content="Dapur Gemilang, Kitchen Set, Kitchen Set Kustom, Kitchen Set Kustom Jakarta, Kitchen Set Kustom Bekasi, Kitchen Set Kustom Depok, Kitchen Set Kustom Tangerang, Kitchen Set Kustom Bogor, Kitchen Set Kustom Bandung, Kitchen Set Kustom Surabaya, Kitchen Set Kustom Semarang, Kitchen Set Kustom Medan, Kitchen Set Kustom Makassar, Kitchen Set Kustom Bali, Kitchen Set Kustom Manado, Kitchen Set Kustom Pontianak, Kitchen Set Kustom Samarinda, Kitchen Set Kustom Balikpapan, Kitchen Set Kustom Palembang, Kitchen Set Kustom Lampung, Kitchen Set Kustom Batam, Kitchen Set Kustom Pekanbaru, Kitchen Set Kustom Padang, Kitchen Set Kustom Banjarmasin, Kitchen Set Kustom Malang, Kitchen Set Kustom Solo, Kitchen Set Kustom Yogyakarta, Kitchen Set Kustom Surakarta, Kitchen Set Kustom Jambi, Kitchen Set Kustom Cirebon, Kitchen Set Kustom Purwokerto, Kitchen Set Kustom Tasikmalaya, Kitchen Set Kustom Bandar Lampung, Kitchen Set Kustom Bengkulu, Kitchen Set Kustom Jember, Kitchen Set Kustom Kediri, Kitchen Set Kustom Denpasar">
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('ggm/assets/img/iconggm.ico') }}">
-
-    <!-- ======= All CSS Plugins here ======== -->
-    <link rel="stylesheet" href="{{ asset('ggm/assets/css/plugins/swiper-bundle.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('ggm/assets/css/plugins/glightbox.min.css') }}">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-        rel="stylesheet">
-
-    <!-- Plugin css -->
-    <link rel="stylesheet" href="{{ asset('ggm/assets/css/vendor/bootstrap.min.css') }}">
-
-    <!-- Custom Style CSS -->
-    <link rel="stylesheet" href="{{ asset('ggm/assets/css/style.css') }}">
+        content="Elevate your online presence with Crafto - a modern, versatile, multipurpose Bootstrap 5 responsive HTML5, SCSS template using highly creative 52+ ready demos.">
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="{{ asset('redesign/images/favicon.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('redesign/images/apple-touch-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('redesign/images/apple-touch-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('redesign/images/apple-touch-icon-114x114.png') }}">
+    <!-- google fonts preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- style sheets and font icons  -->
+    <link rel="stylesheet" href="{{ asset('redesign/css/vendors.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('redesign/css/icon.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('redesign/css/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('redesign/css/responsive.css') }}" />
+    <link rel="stylesheet" href="{{ asset('redesign/demos/decor-store/decor-store.css') }}" />
 </head>
 
-<body>
-
-    <!-- Start header area -->
+<body data-mobile-nav-style="classic">
+    <!-- start header -->
     @include('components.header')
-    <!-- End header area -->
-
-    <main class="main__content_wrapper">
-        @yield('content')
-    </main>
-
-    <!-- Start footer section -->
-    @include('components.footer')
-    <!-- End footer section -->
-
-    @include('components.quickview')
-
-
-    <!-- Start News letter popup -->
-    <div class="newsletter__popup" data-animation="slideInUp">
-        <div class="newsletter__popup--inner">
-            <button class="newsletter__popup--close__btn" aria-label="search close button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 512 512">
-                    <path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="32" d="M368 368L144 144M368 144L144 368"></path>
-                </svg>
-            </button>
-            <div class="box newsletter__popup--box d-flex align-items-center">
-                <div class="newsletter__popup--thumbnail">
-                    <img class="newsletter__popup--thumbnail__img display-block"
-                        src="assets/img/banner/newsletter-popup-thumb2.png" alt="newsletter-popup-thumb">
+    <!-- end header -->
+    @yield('content')
+    <!-- start footer -->
+    <footer class="footer-dark bg-dark-gray pb-0 pt-0 cover-background"
+        style="background-image:url('images/demo-decor-store-footer-bg.jpg')">
+        <div class="container pt-4 pb-4 md-pt-45px md-pb-45px">
+            <div class="row justify-content-center">
+                <!-- start footer column -->
+                <div class="col-6 col-lg-3 last-paragraph-no-margin order-sm-1 md-mb-50px xs-mb-30px">
+                    <a href="demo-decor-store.html" class="footer-logo mb-15px d-inline-block"><img
+                            src="images/demo-decor-store-logo-white.png"
+                            data-at2x="images/demo-decor-store-logo-white@2x.png" alt=""></a>
+                    <p class="w-80 sm-w-100">Lorem ipsum amet adipiscing elit to eiusmod ad tempor.</p>
+                    <div class="elements-social social-icon-style-02 mt-15px">
+                        <ul class="small-icon light">
+                            <li><a class="facebook" href="https://www.facebook.com/" target="_blank"><i
+                                        class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a class="dribbble" href="http://www.dribbble.com" target="_blank"><i
+                                        class="fa-brands fa-dribbble"></i></a></li>
+                            <li><a class="twitter" href="http://www.twitter.com" target="_blank"><i
+                                        class="fa-brands fa-twitter"></i></a></li>
+                            <li><a class="instagram" href="http://www.instagram.com" target="_blank"><i
+                                        class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="newsletter__popup--box__right">
-                    <h2 class="newsletter__popup--title">Join Our Newsletter</h2>
-                    <div class="newsletter__popup--content">
-                        <label class="newsletter__popup--content--desc">Enter your email address to subscribe our
-                            notification of our new post &amp; features by email.</label>
-                        <div class="newsletter__popup--subscribe" id="frm_subscribe">
-                            <form class="newsletter__popup--subscribe__form">
-                                <input class="newsletter__popup--subscribe__input" type="text"
-                                    placeholder="Enter you email address here...">
-                                <button class="newsletter__popup--subscribe__btn">Subscribe</button>
-                            </form>
-                            <div class="newsletter__popup--footer">
-                                <input type="checkbox" id="newsletter__dont--show">
-                                <label class="newsletter__popup--dontshow__again--text"
-                                    for="newsletter__dont--show">Don't show this popup again</label>
+                <!-- end footer column -->
+                <!-- start footer column -->
+                <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-3 order-lg-2">
+                    <span class="fs-16 alt-font fw-500 d-block text-white mb-5px">Categories</span>
+                    <ul>
+                        <li><a href="demo-decor-store-shop.html">Bed room</a></li>
+                        <li><a href="demo-decor-store-shop.html">Living room</a></li>
+                        <li><a href="demo-decor-store-shop.html">Lightning</a></li>
+                        <li><a href="demo-decor-store-shop.html">Fabrics sofa</a></li>
+                    </ul>
+                </div>
+                <!-- end footer column -->
+                <!-- start footer column -->
+                <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-3 order-lg-2">
+                    <span class="fs-16 alt-font fw-500 d-block text-white mb-5px">Information</span>
+                    <ul>
+                        <li><a href="demo-decor-store-about.html">About us</a></li>
+                        <li><a href="demo-decor-store-contact.html">Contact us</a></li>
+                        <li><a href="demo-decor-store-faq.html">FAQs</a></li>
+                        <li><a href="demo-decor-store-faq.html">Payment</a></li>
+                    </ul>
+                </div>
+                <!-- end footer column -->
+                <!-- start footer column -->
+                <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-3 order-lg-2">
+                    <span class="fs-16 alt-font fw-500 d-block text-white mb-5px">Account</span>
+                    <ul>
+                        <li><a href="demo-decor-store-account.html">My account</a></li>
+                        <li><a href="demo-decor-store-cart.html">Orders</a></li>
+                        <li><a href="demo-decor-store-checkout.html">Checkout</a></li>
+                        <li><a href="#">My wishlists</a></li>
+                    </ul>
+                </div>
+                <!-- end footer column -->
+                <!-- start footer column -->
+                <div class="col-lg-3 col-sm-6 ps-20px sm-ps-15px md-mb-50px xs-mb-0 order-sm-2 order-lg-5">
+                    <span class="fs-16 alt-font fw-500 d-block text-white mb-5px">Newsletter</span>
+                    <div class="mb-20px">Get everything you need succeed!</div>
+                    <div class="d-inline-block w-100 newsletter-style-02 position-relative mb-15px">
+                        <form action="email-templates/subscribe-newsletter.php" method="post"
+                            class="position-relative w-100">
+                            <input
+                                class="bg-blue-tangaroa border-color-transparent-white-light w-100 form-control pe-50px ps-20px lg-ps-15px required"
+                                type="email" name="email" placeholder="Enter your email" />
+                            <input type="hidden" name="redirect" value="">
+                            <button class="btn pe-20px submit" aria-label="submit"><i
+                                    class="icon feather icon-feather-mail icon-small text-white"></i></button>
+                            <div
+                                class="form-results border-radius-4px pt-5px pb-5px ps-15px pe-15px fs-14 lh-22 mt-10px w-100 text-center position-absolute d-none">
                             </div>
-                        </div>
+                        </form>
+                    </div>
+                    <div class="footer-card">
+                        <a href="#" class="d-inline-block me-5px align-middle"><img
+                                src="https://placehold.co/55x20" alt=""></a>
+                        <a href="#" class="d-inline-block me-5px align-middle"><img
+                                src="https://placehold.co/55x20" alt=""></a>
+                        <a href="#" class="d-inline-block me-5px align-middle"><img
+                                src="https://placehold.co/55x20" alt=""></a>
+                        <a href="#" class="d-inline-block me-5px align-middle"><img
+                                src="https://placehold.co/55x20" alt=""></a>
+                    </div>
+                </div>
+                <!-- end footer column -->
+            </div>
+        </div>
+        <div class="border-top border-color-transparent-white-light pt-30px pb-30px">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div
+                        class="col-xl-8 last-paragraph-no-margin text-center text-xl-start lg-mt-20px order-3 order-xl-1">
+                        <p class="fs-14 mb-0 w-90 xl-w-100">This site is protected by reCAPTCHA and the Google <a
+                                href="#" class="text-white text-decoration-line-bottom">privacy policy</a> and
+                            terms of service apply.</p>
+                        <p class="fs-14 w-90 xl-w-100">&copy; 2024 Crafto is Proudly Powered by <a
+                                href="https://www.themezaa.com/" target="_blank"
+                                class="text-white text-decoration-line-bottom">ThemeZaa</a></p>
+                    </div>
+                    <div class="col-6 col-xl-2 col-md-3 col-sm-5 text-center text-xl-start order-1 order-xl-2">
+                        <span class="lh-26 alt-font d-block">Need support?</span>
+                        <a href="tel:12345678910" class="fs-16 text-white fw-500">+1 234 567 8910</a>
+                    </div>
+                    <div class="col-6 col-xl-2 col-md-3 col-sm-5 text-center text-xl-start order-2 order-xl-3">
+                        <span class="lh-26 alt-font d-block">Customer care</span>
+                        <a href="mailto:info@domain.com" class="fs-16 text-white fw-500">info@domain.com</a>
                     </div>
                 </div>
             </div>
         </div>
+    </footer>
+    <!-- end footer -->
+    <!-- start cookie message -->
+    <div id="cookies-model" class="cookie-message bg-dark-gray border-radius-8px">
+        <div class="cookie-description fs-14 text-white mb-20px lh-22">We use cookies to enhance your browsing
+            experience, serve personalized ads or content, and analyze our traffic. By clicking "Allow cookies" you
+            consent to our use of cookies. </div>
+        <div class="cookie-btn">
+            <a href="#"
+                class="btn btn-transparent-white border-1 border-color-transparent-white-light btn-very-small btn-switch-text btn-rounded w-100 mb-15px"
+                aria-label="btn">
+                <span>
+                    <span class="btn-double-text" data-text="Cookie policy">Cookie policy</span>
+                </span>
+            </a>
+            <a href="#"
+                class="btn btn-white btn-very-small btn-switch-text btn-box-shadow accept_cookies_btn btn-rounded w-100"
+                data-accept-btn aria-label="text">
+                <span>
+                    <span class="btn-double-text" data-text="Allow cookies">Allow cookies</span>
+                </span>
+            </a>
+        </div>
     </div>
-    <!-- End News letter popup -->
-
-    <!-- Scroll top bar -->
-    <button class="color-scheme-2" aria-label="scroll top btn" id="scroll__top"><svg xmlns="http://www.w3.org/2000/svg"
-            class="ionicon" viewBox="0 0 512 512">
-            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48"
-                d="M112 244l144-144 144 144M256 120v292" />
-        </svg></button>
-
-    <!-- All Script JS Plugins here  -->
-    <script src="{{ asset('ggm/assets/js/vendor/popper.js') }}" defer="defer"></script>
-    <script src="{{ asset('ggm/assets/js/vendor/bootstrap.min.js') }}" defer="defer"></script>
-    <script src="{{ asset('ggm/assets/js/plugins/swiper-bundle.min.js') }}" defer="defer"></script>
-    <script src="{{ asset('ggm/assets/js/plugins/glightbox.min.js') }}" defer="defer"></script>
-
-    <!-- Customscript js -->
-    <script src="{{ asset('ggm/assets/js/script.js') }}" defer="defer"></script>
-    @yield('js')
-
+    <!-- end cookie message -->
+    <!-- start scroll progress -->
+    <div class="scroll-progress d-none d-xxl-block">
+        <a href="#" class="scroll-top" aria-label="scroll">
+            <span class="scroll-text">Scroll</span><span class="scroll-line"><span
+                    class="scroll-point"></span></span>
+        </a>
+    </div>
+    <!-- end scroll progress -->
+    <!-- javascript libraries -->
+    <script type="text/javascript" src="{{ asset('redesign/js/jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('redesign/js/vendors.min.js') }}"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA56KqSJ11nQUw_tXgXyNMiPmQeM7EaSA&callback=initMap"></script>
+    <script type="text/javascript" src="{{ asset('redesign/js/main.js') }}"></script>
 </body>
 
 </html>
