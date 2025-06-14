@@ -46,12 +46,15 @@
             <div class="container-fluid">
                 <div class="col-auto">
                     <a class="navbar-brand" href="demo-decor-store.html">
-                        <img src="images/demo-decor-store-logo-black.png"
-                            data-at2x="images/demo-decor-store-logo-black@2x.png" alt="" class="default-logo">
-                        <img src="images/demo-decor-store-logo-black.png"
-                            data-at2x="images/demo-decor-store-logo-black@2x.png" alt="" class="alt-logo">
-                        <img src="images/demo-decor-store-logo-black.png"
-                            data-at2x="images/demo-decor-store-logo-black@2x.png" alt="" class="mobile-logo">
+                        <img src="{{ asset('redesign/images/demo-decor-store-logo-black.png') }}"
+                            data-at2x="{{ asset('redesign/images/demo-decor-store-logo-black@2x.png') }}" alt=""
+                            class="default-logo">
+                        <img src="{{ asset('redesign/images/demo-decor-store-logo-black.png') }}"
+                            data-at2x="{{ asset('redesign/images/demo-decor-store-logo-black@2x.png') }}" alt=""
+                            class="alt-logo">
+                        <img src="{{ asset('redesign/images/demo-decor-store-logo-black.png') }}"
+                            data-at2x="{{ asset('redesign/images/demo-decor-store-logo-black@2x.png') }}" alt=""
+                            class="mobile-logo">
                     </a>
                 </div>
                 <div class="col-auto menu-order position-static xs-ps-0">

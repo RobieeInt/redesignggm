@@ -95,9 +95,8 @@
                         <p class="fs-14 mb-0 w-90 xl-w-100">This site is protected by reCAPTCHA and the Google <a
                                 href="#" class="text-white text-decoration-line-bottom">privacy policy</a> and
                             terms of service apply.</p>
-                        <p class="fs-14 w-90 xl-w-100">&copy; 2024 Crafto is Proudly Powered by <a
-                                href="https://www.themezaa.com/" target="_blank"
-                                class="text-white text-decoration-line-bottom">ThemeZaa</a></p>
+                        <p class="fs-14 w-90 xl-w-100">&copy; 2024 <a href="#" target="_blank"
+                                class="text-white text-decoration-line-bottom">Yujang</a></p>
                     </div>
                     <div class="col-6 col-xl-2 col-md-3 col-sm-5 text-center text-xl-start order-1 order-xl-2">
                         <span class="lh-26 alt-font d-block">Need support?</span>
