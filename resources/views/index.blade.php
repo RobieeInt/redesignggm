@@ -33,7 +33,7 @@
     @include('components.header')
     <!-- end header -->
     <!-- start section -->
-
+    @include('components.slider')
     <!-- end section -->
     <!-- start section -->
     @include('components.banner')
