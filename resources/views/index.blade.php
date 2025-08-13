@@ -33,22 +33,26 @@
     @include('components.header')
     <!-- end header -->
     <!-- start section -->
-    @include('components.sliderbg')
+    @include('components.hero')
+    @include('components.sliderhero')
+    @include('components.why')
+    @include('components.categoryhero')
     <!-- end section -->
     <!-- start section -->
-    @include('components.bannerslider')
+    {{-- @include('components.bannerslider') --}}
     <!-- end section -->
     <!-- start section -->
     @include('components.category')
+    @include('components.work')
     <!-- start section -->
-    @include('components.slider_move')
+    {{-- @include('components.slider_move') --}}
     <!-- end section -->
-    @include('components.tema')
+    {{-- @include('components.tema') --}}
     {{-- @include('components.product') --}}
     <!-- end section -->
     <!-- start section -->
-    @include('components.whyus')
-    @include('components.catalog')
+    {{-- @include('components.whyus') --}}
+    {{-- @include('components.catalog') --}}
     {{-- @include('components.explore') --}}
     <!-- end section -->
     <!-- start section -->
@@ -61,7 +65,7 @@
     {{-- @include('components.box_payment') --}}
     <!-- end section -->
     <!-- start footer -->
-    @include('components.footer')
+    @include('components.footerhero')
     <!-- end footer -->
     <!-- start cookie message -->
 
