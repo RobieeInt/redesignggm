@@ -16,7 +16,7 @@
                 let us know what you're looking for in an agency, we'll take a look and see if this could be the start
                 of something beautiful
             </p>
-            <a href="#contact"
+            <a href="{{ route('contact') }}"
                 style="display: inline-block; padding: 10px 25px; background-color: transparent; color: white; text-decoration: none; font-weight: bold; border: 2px solid white; border-radius: 5px;">
                 CONTACT US
             </a>
