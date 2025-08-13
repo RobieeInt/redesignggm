@@ -18,20 +18,36 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav alt-font">
-                        <li class="nav-item"><a href="{{ route('landing-page') }}" class="nav-link"
-                                style="color:white;">Home</a></li>
-                        <li class="nav-item"><a href="{{ route('blog') }}" class="nav-link"
-                                style="color:white;">Event</a></li>
-                        <li class="nav-item"><a href="{{ route('about') }}" class="nav-link"
-                                style="color:white;">About</a></li>
-                        <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link"
-                                style="color:white;">Contact</a></li>
+                        <li class="nav-item"><a href="{{ route('landing-page') }}" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="{{ route('blog') }}" class="nav-link">Event</a></li>
+                        <li class="nav-item"><a href="{{ route('about') }}" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-auto ms-auto">
-
+                <!-- Kosong -->
             </div>
         </div>
     </nav>
+    <style>
+        /* Mobile view: navbar link hitam */
+        @media (max-width: 768px) {
+            .navbar-nav .nav-link {
+                color: black !important;
+            }
+
+            /* Toggler line tetap hitam di mobile */
+            .navbar-toggler .navbar-toggler-line {
+                background-color: black !important;
+            }
+        }
+
+        /* Desktop: navbar link tetap putih */
+        @media (min-width: 769px) {
+            .navbar-nav .nav-link {
+                color: white !important;
+            }
+        }
+    </style>
 </header>

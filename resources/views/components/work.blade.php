@@ -10,7 +10,7 @@
     <article class="content"
         style="position: relative; z-index: 2; display: flex; align-items: center; justify-content: center; min-height: 100vh; text-align: center; color: white; padding: 2rem 5%;">
         <div>
-            <p style="font-size: 1.5rem; margin: 0;">WELCOME TO</p>
+            {{-- <p style="font-size: 1.5rem; margin: 0;">WELCOME TO</p> --}}
             <h1 style="font-size: 3rem; font-weight: bold; margin: 0;">LET'S WORK TOGETHER</h1>
             <p style="font-size: 1.2rem; margin: 10px 0 20px;">
                 let us know what you're looking for in an agency, we'll take a look and see if this could be the start
