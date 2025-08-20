@@ -1,5 +1,5 @@
 <section class="p-0 hero-section"
-    style="position: relative; overflow: hidden; background-image: url('{{ asset('redesign/images/hero.webp') }}'); background-size: cover; background-position: center; min-height: 100vh;">
+    style="position: relative; overflow: hidden; background-image: url('{{ asset('redesign/images/hero1.webp') }}'); background-size: cover; background-position: center; min-height: 100vh;">
 
     <!-- Overlay gelap -->
     <div
@@ -17,7 +17,7 @@
                 of something beautiful
             </p>
             <a href="{{ route('contact') }}"
-                style="display: inline-block; padding: 10px 25px; background-color: transparent; color: white; text-decoration: none; font-weight: bold; border: 2px solid white; border-radius: 5px;">
+                style="display: inline-block; padding: 10px 25px; background-color: transparent; color: black;background-color:white; text-decoration: none; font-weight: bold; border: 2px solid white; border-radius: 5px;">
                 CONTACT US
             </a>
         </div>

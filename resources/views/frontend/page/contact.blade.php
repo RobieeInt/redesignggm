@@ -1,22 +1,22 @@
 @extends('frontend.layouts.base')
 
-@section('title', 'About Us')
+@section('title', 'Contact Us')
 
 @section('content')
     <!-- start page title -->
     <section class="page-title-center-alignment cover-background top-space-padding"
-        style="background-image: url(images/demo-decor-store-title-bg.jpg)">
+        style="background-image: url('{{ asset('redesign/images/hero1.webp') }}')">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center position-relative page-title-extra-large">
-                    <h1 class="alt-font d-inline-block fw-700 ls-minus-05px text-base-color mb-10px mt-3 md-mt-50px">
-                        Contact us</h1>
+                    <h1 class="alt-font d-inline-block fw-700 ls-minus-05px text-base-color mb-10px mt-3 md-mt-50px"
+                        style="color: white">Contact Us</h1>
                 </div>
                 <div class="col-12 breadcrumb breadcrumb-style-01 d-flex justify-content-center">
-                    <ul>
-                        <li><a href="{{ route('landing-page') }}">Home</a></li>
-                        <li>Contact us</li>
-                    </ul>
+                    {{-- <ul>
+                        <li style="color: white;"><a href="{{ route('landing-page') }}">Home</a></li>
+                        <li style="color: white;">Latest blog</li>
+                    </ul> --}}
                 </div>
             </div>
         </div>
@@ -33,7 +33,8 @@
                             class="feather icon-feather-map-pin d-inline-block text-base-color me-10px"></i>Office
                         location</span>
                     <div>
-                        <p class="w-100 m-0">16122 Collins street,<br> Melbourne, Australia</p>
+                        <p class="w-100 m-0">Jl. Raya Mauk Galeong No.8 Km.3 RT.004/007, Margasari, Kec. Karawaci, Kota
+                            Tangerang, Banten 15113</p>
                     </div>
                 </div>
                 <div class="col md-mb-35px">
@@ -41,24 +42,15 @@
                         class="fs-17 fw-600 d-block w-90 sm-w-100 text-base-color border-bottom border-color-base-color pb-15px mb-15px"><i
                             class="feather icon-feather-mail d-inline-block text-base-color me-10px"></i>Send a
                         message</span>
-                    <a href="mailto:info@yourdomain.com">info@yourdomain.com</a><br>
-                    <a href="mailto:sales@yourdomain.com">sales@yourdomain.com</a>
+                    <a href="mailto:info@dapurgemilang.com">info@dapurgemilang.com</a><br>
+                    <a href="mailto:sales@dapurgemilang.com">sales@dapurgemilang.com</a>
                 </div>
                 <div class="col xs-mb-35px">
                     <span
                         class="fs-17 fw-600 d-block w-90 sm-w-100 text-base-color border-bottom border-color-base-color pb-15px mb-15px"><i
                             class="feather icon-feather-phone d-inline-block text-base-color me-10px"></i>Call us
                         directly</span>
-                    <a href="tel:1800222000">1-800-222-000</a><br>
-                    <a href="tel:1800222002">1-800-222-002</a>
-                </div>
-                <div class="col">
-                    <span
-                        class="fs-17 fw-600 d-block w-90 sm-w-100 text-base-color border-bottom border-color-base-color pb-15px mb-15px"><i
-                            class="feather icon-feather-users d-inline-block text-base-color me-10px"></i>Join our
-                        team</span>
-                    <a href="mailto:hire@yourdomain.com">hire@yourdomain.com</a><br>
-                    <a href="mailto:hr@yourdomain.com">hr@yourdomain.com</a>
+                    <a href="tel:0899-4573-980">0899-4573-980</a><br>
                 </div>
             </div>
         </div>
@@ -70,7 +62,11 @@
             <div class="row mb-20px">
                 <div class="col-lg-10 col-md-12"
                     data-anime='{ "effect": "slide", "color": "#1B3250", "direction":"rl", "easing": "easeOutQuad", "delay":50}'>
-                    <img src="https://placehold.co/1000x560" alt="" />
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.093266674905!2d106.6122677!3d-6.1723898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ff75762e7147%3A0x6fbc6ed6be1e4c14!2sJl.%20Raya%20Mauk%20Galeong%20No.8%20Km.3%2C%20Margasari%2C%20Kec.%20Karawaci%2C%20Kota%20Tangerang%2C%20Banten%2015113!5e0!3m2!1sid!2sid!4v1723891234567"
+                        width="1000" height="560" style="border:0; border-radius:12px;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
             </div>
             <div class="row align-items-end">
@@ -101,7 +97,7 @@
     </section>
     <!-- end section -->
     <!-- start section -->
-    <section class="p-0 border-radius-6px lg-no-border-radius overflow-hidden" id="location">
+    {{-- <section class="p-0 border-radius-6px lg-no-border-radius overflow-hidden" id="location">
         <div class="container-fluid px-0">
             <div class="row justify-content-center g-0">
                 <div class="col-12 p-0">
@@ -111,6 +107,6 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- end section -->
 @endsection

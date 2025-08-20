@@ -5,18 +5,18 @@
 @section('content')
     <!-- start page title -->
     <section class="page-title-center-alignment cover-background top-space-padding"
-        style="background-image: url(images/demo-decor-store-title-bg.jpg)">
+        style="background-image: url('{{ asset('redesign/images/hero1.webp') }}')">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center position-relative page-title-extra-large">
-                    <h1 class="alt-font d-inline-block fw-700 ls-minus-05px text-base-color mb-10px mt-3 md-mt-50px">About us
-                    </h1>
+                    <h1 class="alt-font d-inline-block fw-700 ls-minus-05px text-base-color mb-10px mt-3 md-mt-50px"
+                        style="color: white">About Us</h1>
                 </div>
                 <div class="col-12 breadcrumb breadcrumb-style-01 d-flex justify-content-center">
-                    <ul>
-                        <li><a href="{{ route('landing-page') }}">Home</a></li>
-                        <li>About us</li>
-                    </ul>
+                    {{-- <ul>
+                        <li style="color: white;"><a href="{{ route('landing-page') }}">Home</a></li>
+                        <li style="color: white;">Latest blog</li>
+                    </ul> --}}
                 </div>
             </div>
         </div>
@@ -30,21 +30,28 @@
                     data-anime='{ "translateX": [0, 0], "opacity": [0,1], "duration": 600, "delay":100, "staggervalue": 150, "easing": "easeOutQuad" }'>
                     <div
                         class="position-relative d-md-flex flex-column align-items-center justify-content-center w-165px h-165px border-radius-100">
-                        <img src="https://placehold.co/164x164" class="position-absolute top-50 translate-middle-y"
-                            alt="">
+                        <img src="{{ asset('redesign/images/category1.webp') }}"
+                            class="position-absolute top-50 translate-middle-y" alt="">
                         <img src="images/demo-decor-store-about-02.png" class="animation-rotation" alt="">
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-7 col-sm-8"
                     data-anime='{ "translateX": [0, 0], "opacity": [0,1], "duration": 600, "delay":100, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                    <span class="text-uppercase fs-13 ls-2px fw-600 mb-5px d-block">Decor store story</span>
-                    <h3 class="text-dark-gray alt-font fw-700 mb-0">Commitment to quality product.</h3>
+                    <span class="text-uppercase fs-13 ls-2px fw-600 mb-5px d-block">Tentang Kami</span>
+                    <h3 class="text-dark-gray alt-font fw-700 mb-0">Dapur Gemilang – Spesialis Kitchen Set & Custom
+                        Aluminium Furniture</h3>
                 </div>
                 <div class="col-lg-5 md-mt-30px last-paragraph-no-margin"
                     data-anime='{ "translateX": [0, 0], "opacity": [0,1], "duration": 600, "delay":100, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                    <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. lorem ipsum has been the
-                        industry's standard dummy text ever since the lorem ipsum is simply dummy text of the printing and
-                        typesetting.</p>
+                    <p><strong>Dapur Gemilang</strong> menghadirkan solusi <em>custom furniture berbasis aluminium</em>
+                        yang elegan, tahan lama, dan sesuai dengan kebutuhan Anda.
+                        Kami berfokus pada <strong>kitchen set aluminium</strong>,
+                        serta berbagai furniture lain seperti <em>laundry room cabinet, TV cabinet, wardrobe cabinet, under
+                            stairs cabinet</em>,
+                        hingga <strong>custom cabinet</strong> sesuai desain impian Anda.</p>
+                    <p>Kami percaya bahwa setiap ruang memiliki karakter unik,
+                        sehingga setiap karya kami dirancang dengan detail dan presisi tinggi
+                        untuk menghadirkan kenyamanan, fungsi, dan estetika terbaik bagi hunian Anda.</p>
                 </div>
             </div>
         </div>
@@ -52,22 +59,22 @@
             <div class="row align-items-center">
                 <div class="col-md-3 text-center p-4 md-p-15px" data-bottom-top="transform: translateY(-80px)"
                     data-top-bottom="transform: translateY(80px)">
-                    <img class="w-100" src="https://placehold.co/500x610" alt="">
+                    <img class="w-100" src="{{ asset('redesign/images/category2.webp') }}" alt="">
                 </div>
                 <div class="col-md-6 text-center" data-bottom-top="transform: translateY(80px)"
                     data-top-bottom="transform: translateY(-80px)">
-                    <img class="w-100" src="https://placehold.co/1000x611" alt="">
+                    <img class="w-100" src="{{ asset('redesign/images/hero1.webp') }}" alt="">
                 </div>
                 <div class="col-md-3 text-center p-4 md-p-15px" data-bottom-top="transform: translateY(-80px)"
                     data-top-bottom="transform: translateY(80px)">
-                    <img class="w-100" src="https://placehold.co/500x610" alt="">
+                    <img class="w-100" src="{{ asset('redesign/images/category3.webp') }}" alt="">
                 </div>
             </div>
         </div>
         <!-- start marquees -->
         <div
             class="marquees-text alt-font fw-700 fs-200 lg-fs-150 md-fs-130 ls-minus-5px text-base-color text-nowrap position-absolute top-50 lg-mt-5 md-mt-15 sm-mt-22 right-100px text-center z-index-minus-1 d-none d-md-inline-block">
-            classic products</div>
+            custom aluminium furniture</div>
         <!-- end marquees -->
     </section>
     <!-- end section -->
@@ -76,88 +83,104 @@
         <div class="container">
             <div class="row row-cols-auto row-cols-xl-4 row-cols-sm-2 lg-ps-10 lg-pe-10 md-ps-7 md-pe-7 sm-ps-0 sm-pe-0 position-relative mb-6 md-mb-8 lg-mt-20px"
                 data-anime='{ "el": "childs", "translateX": [50, 0], "opacity": [0,1], "duration": 600, "delay":100, "staggervalue": 150, "easing": "easeOutQuad" }'>
+
                 <!-- start features box item -->
                 <div class="col align-self-start xs-mb-30px">
                     <div class="feature-box text-start ps-30px pe-30px sm-ps-20px sm-pe-20px">
                         <div class="feature-box-icon position-absolute left-0px top-0px">
                             <h1
                                 class="alt-font fs-90 text-outline text-outline-width-1px text-outline-color-dark-gray fw-800 ls-minus-1px opacity-2 mb-0">
-                                01</h1>
+                                01
+                            </h1>
                         </div>
                         <div class="feature-box-content last-paragraph-no-margin pt-30 lg-pt-22 xs-pt-40px">
-                            <span class="text-dark-gray fs-18 d-inline-block fw-600 mb-5px">Business founded</span>
-                            <p>Lorem ipsum is simply text the printing typesetting standard dummy.</p>
+                            <span class="text-dark-gray fs-18 d-inline-block fw-600 mb-5px">Awal Berdiri</span>
+                            <p>Dapur Gemilang hadir dengan visi menghadirkan kitchen set berkualitas tinggi berbahan
+                                aluminium yang kuat, modern, dan elegan.</p>
                             <span class="w-60px h-2px bg-dark-gray mt-20px d-inline-block"></span>
                         </div>
                     </div>
                 </div>
                 <!-- end features box item -->
+
                 <!-- start features box item -->
                 <div class="col align-self-end mt-30px lg-mt-0">
                     <div class="feature-box text-start ps-30px pe-30px sm-ps-20px sm-pe-20px">
                         <div class="feature-box-icon position-absolute left-0px top-0px">
                             <h1
                                 class="alt-font fs-90 text-outline text-outline-width-1px text-outline-color-dark-gray fw-800 ls-minus-1px opacity-2 mb-0">
-                                02</h1>
+                                02
+                            </h1>
                         </div>
                         <div class="feature-box-content last-paragraph-no-margin pt-30 lg-pt-22 xs-pt-40px">
-                            <span class="text-dark-gray fs-18 d-inline-block fw-600 mb-5px">Build new office</span>
-                            <p>Lorem ipsum is simply text the printing typesetting standard dummy.</p>
+                            <span class="text-dark-gray fs-18 d-inline-block fw-600 mb-5px">Ekspansi Produk</span>
+                            <p>Tidak hanya kitchen set, kami juga menghadirkan berbagai custom furniture seperti wardrobe,
+                                TV cabinet, laundry room cabinet, hingga under stairs cabinet.</p>
                             <span class="w-60px h-2px bg-dark-gray mt-20px d-inline-block"></span>
                         </div>
                     </div>
                 </div>
                 <!-- end features box item -->
+
                 <!-- start features box item -->
                 <div class="col align-self-start lg-mt-30px">
                     <div class="feature-box text-start ps-30px pe-30px sm-ps-20px sm-pe-20px">
                         <div class="feature-box-icon position-absolute left-0px top-0px">
                             <h1
                                 class="alt-font fs-90 text-outline text-outline-width-1px text-outline-color-dark-gray fw-800 ls-minus-1px opacity-2 mb-0">
-                                03</h1>
+                                03
+                            </h1>
                         </div>
                         <div class="feature-box-content last-paragraph-no-margin pt-30 lg-pt-22 xs-pt-40px">
-                            <span class="text-dark-gray fs-18 d-inline-block fw-600 mb-5px">Relocates headquarter</span>
-                            <p>Lorem ipsum is simply text the printing typesetting standard dummy.</p>
+                            <span class="text-dark-gray fs-18 d-inline-block fw-600 mb-5px">Inovasi & Kustomisasi</span>
+                            <p>Kami fokus pada layanan custom, menyesuaikan kebutuhan unik setiap ruangan agar lebih
+                                fungsional sekaligus estetik.</p>
                             <span class="w-60px h-2px bg-dark-gray mt-20px d-inline-block"></span>
                         </div>
                     </div>
                 </div>
                 <!-- end features box item -->
+
                 <!-- start features box item -->
                 <div class="col align-self-end lg-mt-30px">
                     <div class="feature-box text-start ps-30px pe-30px sm-ps-20px sm-pe-20px">
                         <div class="feature-box-icon position-absolute left-0px top-0px">
                             <h1
                                 class="alt-font fs-90 text-outline text-outline-width-1px text-outline-color-dark-gray fw-800 ls-minus-1px opacity-2 mb-0">
-                                04</h1>
+                                04
+                            </h1>
                         </div>
                         <div class="feature-box-content last-paragraph-no-margin pt-30 lg-pt-22 xs-pt-40px">
-                            <span class="text-dark-gray fs-18 d-inline-block fw-600 mb-5px">Revenues of millions</span>
-                            <p>Lorem ipsum is simply text the printing typesetting standard dummy.</p>
+                            <span class="text-dark-gray fs-18 d-inline-block fw-600 mb-5px">Dipercaya Ribuan Klien</span>
+                            <p>Hingga kini, Dapur Gemilang dipercaya oleh ribuan pelanggan dengan rating kepuasan yang
+                                tinggi.</p>
                             <span class="w-60px h-2px bg-dark-gray mt-20px d-inline-block"></span>
                         </div>
                     </div>
                 </div>
                 <!-- end features box item -->
             </div>
+
             <div class="row justify-content-center xs-mt-12"
                 data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay":100, "staggervalue": 150, "easing": "easeOutQuad" }'>
                 <div class="col-xl-9 col-lg-10">
                     <div
                         class="row align-items-center justify-content-center border border-color-extra-medium-gray border-radius-100px sm-border-radius-6px sm-mx-0">
+
                         <div
                             class="col-md-6 p-20px border-end border-color-transparent-dark-very-light text-center ls-minus-05px align-items-center d-flex justify-content-center sm-border-end-0 sm-pb-0 sm-mb-10px">
                             <i class="bi bi-emoji-smile text-dark-gray icon-extra-medium me-10px"></i>
-                            <span class="text-dark-gray fs-18 text-start fw-500 xs-lh-28">Join the <span
-                                    class="fw-800">10000+</span> people trusting us.</span>
+                            <span class="text-dark-gray fs-18 text-start fw-500 xs-lh-28">Bergabunglah dengan <span
+                                    class="fw-800">10.000+</span> pelanggan yang puas.</span>
                         </div>
+
                         <div
                             class="col-md-6 p-20px sm-pt-0 text-center ls-minus-05px align-items-center d-flex justify-content-center">
                             <i class="bi bi-star text-dark-gray icon-extra-medium me-10px"></i>
-                            <span class="text-dark-gray fs-18 text-start fw-500">4.9 out of 5 - <span
-                                    class="fw-800">8549</span> Total reviews.</span>
+                            <span class="text-dark-gray fs-18 text-start fw-500">Rating <span class="fw-800">4.9/5</span>
+                                dari <span class="fw-800">8500+</span> ulasan.</span>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -165,7 +188,7 @@
     </section>
     <!-- end section -->
     <!-- start section -->
-    <section data-parallax-background-ratio="0.5" style="background-image: url(https://placehold.co/1920x1100)">
+    {{-- <section data-parallax-background-ratio="0.5" style="background-image: url(https://placehold.co/1920x1100)">
         <div class="opacity-light bg-base-color"></div>
         <div class="container">
             <div class="row align-items-center justify-content-end"
@@ -220,10 +243,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- end section -->
     <!-- start section -->
-    <section>
+    {{-- <section>
         <div class="container">
             <div class="row justify-content-center mb-40px sm-mb-30px">
                 <div class="col-lg-5 text-center"
@@ -356,6 +379,6 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- end section -->
 @endsection

@@ -1,5 +1,5 @@
 <section class="p-0 hero-section"
-    style="position: relative; overflow: hidden; background-image: url('{{ asset('redesign/images/hero.webp') }}'); background-size: cover; background-position: center; min-height: 100vh;">
+    style="position: relative; overflow: hidden; background-image: url('{{ asset('redesign/images/hero1.webp') }}'); background-size: cover; background-position: center; min-height: 100vh;">
     <!-- Overlay gelap -->
     <div
         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.4); z-index: 1;">
