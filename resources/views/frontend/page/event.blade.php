@@ -85,7 +85,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-12 mt-3 sm-mb-3 d-flex justify-content-center"
+                {{-- <div class="col-12 mt-3 sm-mb-3 d-flex justify-content-center"
                     data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 600, "delay":100, "staggervalue": 150, "easing": "easeOutQuad" }'>
                     <ul class="pagination pagination-style-01 fs-13 fw-500 mb-0">
                         <li class="page-item"><a class="page-link" href="#"><i
@@ -97,7 +97,7 @@
                         <li class="page-item"><a class="page-link" href="#"><i
                                     class="feather icon-feather-arrow-right fs-18 d-xs-none"></i></a></li>
                     </ul>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>
