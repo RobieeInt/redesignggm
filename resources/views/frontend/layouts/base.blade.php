@@ -31,7 +31,9 @@
     <!-- end header -->
     @yield('content')
     <!-- start footer -->
-    @include('components.footer')
+    {{-- @include('components.footer') --}}
+
+    @include('components.footerhero')
     <!-- end footer -->
     <!-- start cookie message -->
     <div id="cookies-model" class="cookie-message bg-dark-gray border-radius-8px">
@@ -62,6 +64,10 @@
             <span class="scroll-text">Scroll</span><span class="scroll-line"><span class="scroll-point"></span></span>
         </a>
     </div>
+
+    @yield('css')
+
+
     <!-- end scroll progress -->
     <!-- javascript libraries -->
     <script type="text/javascript" src="{{ asset('redesign/js/jquery.js') }}"></script>

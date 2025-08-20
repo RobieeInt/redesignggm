@@ -4,7 +4,7 @@
 
 @section('content')
     <!-- start page title -->
-    <section class="page-title-center-alignment cover-background top-space-padding"
+    <section class="page-title-center-alignment cover-background top-space-padding "
         style="background-image: url('{{ asset('redesign/images/hero1.webp') }}')">
         <div class="container">
             <div class="row">
@@ -14,9 +14,9 @@
                 </div>
                 <div class="col-12 breadcrumb breadcrumb-style-01 d-flex justify-content-center">
                     {{-- <ul>
-                        <li style="color: white;"><a href="{{ route('landing-page') }}">Home</a></li>
-                        <li style="color: white;">Latest blog</li>
-                    </ul> --}}
+                    <li style="color: white;"><a href="{{ route('landing-page') }}">Home</a></li>
+                    <li style="color: white;">Latest blog</li>
+                </ul> --}}
                 </div>
             </div>
         </div>
@@ -31,8 +31,8 @@
                     <div
                         class="position-relative d-md-flex flex-column align-items-center justify-content-center w-165px h-165px border-radius-100">
                         <img src="{{ asset('redesign/images/category1.webp') }}"
-                            class="position-absolute top-50 translate-middle-y" alt="">
-                        <img src="images/demo-decor-store-about-02.png" class="animation-rotation" alt="">
+                            class="hide-on-mobile position-absolute top-50 translate-middle-y" alt="">
+                        {{-- <img src="{{ asset('redesign/images/category1.webp') }}" class="animation-rotation" alt=""> --}}
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-7 col-sm-8"
@@ -381,4 +381,14 @@
         </div>
     </section> --}}
     <!-- end section -->
+@endsection
+
+@section('css')
+    <style>
+        @media (max-width: 768px) {
+            img.hide-on-mobile {
+                display: none !important;
+            }
+        }
+    </style>
 @endsection

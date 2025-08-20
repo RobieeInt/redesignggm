@@ -62,11 +62,14 @@
             <div class="row mb-20px">
                 <div class="col-lg-10 col-md-12"
                     data-anime='{ "effect": "slide", "color": "#1B3250", "direction":"rl", "easing": "easeOutQuad", "delay":50}'>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.093266674905!2d106.6122677!3d-6.1723898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ff75762e7147%3A0x6fbc6ed6be1e4c14!2sJl.%20Raya%20Mauk%20Galeong%20No.8%20Km.3%2C%20Margasari%2C%20Kec.%20Karawaci%2C%20Kota%20Tangerang%2C%20Banten%2015113!5e0!3m2!1sid!2sid!4v1723891234567"
-                        width="1000" height="560" style="border:0; border-radius:12px;" allowfullscreen=""
-                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.093266674905!2d106.6122677!3d-6.1723898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ff75762e7147%3A0x6fbc6ed6be1e4c14!2sJl.%20Raya%20Mauk%20Galeong%20No.8%20Km.3%2C%20Margasari%2C%20Kec.%20Karawaci%2C%20Kota%20Tangerang%2C%20Banten%2015113!5e0!3m2!1sid!2sid!4v1723891234567"
+                            style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
                 </div>
             </div>
             <div class="row align-items-end">
@@ -109,4 +112,27 @@
         </div>
     </section> --}}
     <!-- end section -->
+@endsection
+
+@section('css')
+    <style>
+        .map-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            /* Aspect ratio 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+        }
+    </style>
 @endsection
