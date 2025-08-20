@@ -43,6 +43,7 @@
     <!-- end section -->
     <!-- start section -->
     @include('components.category')
+    @include('components.katalog')
     @include('components.work')
     <!-- start section -->
     {{-- @include('components.slider_move') --}}
