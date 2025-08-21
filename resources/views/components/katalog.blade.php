@@ -1,4 +1,5 @@
-<section class="position-relative pt-0 overflow-hidden mb-1" style="width:100vw; max-width:100vw; margin:0; padding:0;">
+<section class="position-relative pt-0 overflow-hidden mb-1 mt-1"
+    style="width:100vw; max-width:100vw; margin:0; padding:0;">
     <div class="banner-wrapper position-relative">
         <img src="{{ asset('redesign/images/katalog.webp') }}" class="d-block banner-img" alt="Banner"
             style="width:100vw; height:40vw; object-fit:cover; min-height:220px; max-height:500px;">
@@ -20,71 +21,60 @@
 </section>
 
 <style>
-    .banner-wrapper {
-        position: relative;
-        width: 100vw;
-        max-width: 100vw;
-        margin: 0;
-        padding: 0;
-    }
-
+    /* Kenburns zoom in effect untuk gambar */
     .banner-img {
-        width: 100vw !important;
-        height: 40vw !important;
-        object-fit: cover;
-        min-height: 220px;
-        max-height: 500px;
-        display: block;
+        animation: zoomInBanner 12s ease-in-out infinite alternate;
     }
 
-    .banner-content {
-        max-width: none;
-        width: 100vw;
-        left: 0;
-        right: 0;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    @media (max-width: 600px) {
-        .banner-content .d-flex>div:first-child {
-            padding-left: 4vw !important;
+    @keyframes zoomInBanner {
+        from {
+            transform: scale(1);
         }
 
-        .banner-content .d-flex>div:last-child {
-            padding-right: 4vw !important;
+        to {
+            transform: scale(1.1);
         }
     }
 
-    .btn-light {
-        background: #fff;
-        color: #000;
-        border-radius: 0;
-        padding: 12px 30px;
+    /* Animasi masuk untuk teks */
+    .banner-content h1 {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeUp 1s ease forwards;
+        animation-delay: 0.3s;
     }
 
-    @media (max-width: 600px) {
-        .banner-img {
-            height: 40vw !important;
-            min-height: 120px;
-            max-height: 220px;
-        }
+    .banner-content p {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeUp 1s ease forwards;
+        animation-delay: 0.6s;
+    }
 
-        .banner-content {
-            padding: 0 4vw;
-        }
+    /* Animasi masuk untuk tombol */
+    .banner-content a.btn {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeUp 1s ease forwards;
+        animation-delay: 0.9s;
+    }
 
-        .btn-light {
-            padding: 8px 16px;
-            font-size: 0.9rem;
+    /* Keyframes fade up */
+    @keyframes fadeUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
         }
+    }
 
-        h1.display-4 {
-            font-size: 1.2rem;
-        }
+    /* Hover effect tombol */
+    .banner-content a.btn {
+        transition: all 0.3s ease;
+    }
 
-        p.fs-4 {
-            font-size: 0.95rem;
-        }
+    .banner-content a.btn:hover {
+        background: #1c3455;
+        color: #fff;
+        letter-spacing: 1px;
     }
 </style>

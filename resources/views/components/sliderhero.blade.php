@@ -1,4 +1,6 @@
-<section class="position-relative pt-0 overflow-visible hero-slider"> <!-- ganti overflow-hidden -> overflow-visible -->
+<section class="position-relative pt-0 overflow-visible hero-slider mt-1"
+    style="background-color: #d7e5e4; min-height: 60vh; display: flex; align-items: center; justify-content: center;">
+    <!-- ganti overflow-hidden -> overflow-visible -->
     <div id="bannerCarousel" class="carousel slide carousel-fade mx-auto" style="max-width: 1160px;" data-bs-ride="carousel"
         data-bs-interval="2000">
 
@@ -22,6 +24,27 @@
 
 <style>
     /* Pastikan tidak ada height fix di carousel maupun item */
+    .hero-slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 60vh;
+        padding-bottom: 0;
+    }
+
+    .hero-slider #bannerCarousel .carousel-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-slider .banner-img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+        display: block;
+    }
+
     .hero-slider #bannerCarousel,
     .hero-slider #bannerCarousel .carousel-inner,
     .hero-slider #bannerCarousel .carousel-item {
