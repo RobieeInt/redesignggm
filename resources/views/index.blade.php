@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="description" content="GGM">
     <!-- favicon icon -->
-    <link rel="shortcut icon" href="{{ asset('redesign/images/favicon.png') }}">
+    <link rel="shortcut icon" href="{{ asset('redesign/favicon.ico') }}">
     <link rel="apple-touch-icon" href="{{ asset('redesign/images/apple-touch-icon-57x57.png') }}">
     <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('redesign/images/apple-touch-icon-72x72.png') }}">
     <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('redesign/images/apple-touch-icon-114x114.png') }}">
